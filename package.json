@@ -4,7 +4,7 @@
   "description": "umd bundled version of fabric.js",
   "main": "./dist/fabric-browserify.js",
   "scripts": {
-    "build": "browserify --standalone fabric-browserify ./node_modules/fabric/dist/fabric.js > dist/fabric-browserify.js",
+    "build": "browserify --standalone fabric-browserify -u canvas -u fs -u jsdom -u xmldom ./lib/fabric.js > dist/fabric-browserify.js",
     "clean": "rimraf dist && mkdirp dist",
     "prepublish": "npm run clean && npm run build"
   },
@@ -22,11 +22,11 @@
     "url": "https://github.com/pixlnow/fabric-browserify/issues"
   },
   "homepage": "https://github.com/pixlnow/fabric-browserify#readme",
-  "browser" : {
-    "canvas" : false,
-    "fs":      false,
-    "jsdom":   false,
-    "xmldom":  false
+  "browser": {
+    "canvas": false,
+    "fs": false,
+    "jsdom": false,
+    "xmldom": false
   },
   "devDependencies": {
     "browserify": "^11.1.0",
