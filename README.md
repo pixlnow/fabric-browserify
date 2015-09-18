@@ -1,2 +1,7 @@
 # fabric-browserify
-Client side bundled version of fabric
+
+### Browserified (umd bundled) version of fabric.js v1.5.0
+
+```javascript
+npm install fabric-browserify
+```
