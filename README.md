@@ -5,5 +5,5 @@
 _Note: this is client side only library; use fabric.js for server side fabric_
 
 ```javascript
-npm install fabric-browserify
+npm install --save git://github.com/pixlnow/fabric-browserify.git
 ```
