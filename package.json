@@ -4,7 +4,7 @@
   "description": "umd bundled version of fabric.js",
   "main": "./dist/fabric-browserify.js",
   "scripts": {
-    "build": "browserify --standalone fabric-browserify -u canvas -u fs -u jsdom -u xmldom -u url -u http -u https ./lib/fabric.js > dist/fabric-browserify.js",
+    "build": "browserify --standalone fabric-browserify -u canvas -u fs -u jsdom -u xmldom -u url -u http -u https -u base64-js -u ieee754 -u is-array ./lib/fabric.js > dist/fabric-browserify.js",
     "clean": "rimraf dist && mkdirp dist",
     "prepublish": "npm run clean && npm run build"
   },
