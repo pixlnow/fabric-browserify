@@ -2,7 +2,7 @@
   "name": "fabric-browserify",
   "version": "0.0.0",
   "description": "umd bundled version of fabric.js",
-  "main": "/dist/fabric-browserify.js",
+  "main": "./dist/fabric-browserify.js",
   "scripts": {
     "build": "browserify --standalone fabric-browserify ./node_modules/fabric/dist/fabric.js > dist/fabric-browserify.js",
     "clean": "rimraf dist && mkdirp dist",
