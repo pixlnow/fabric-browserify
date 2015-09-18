@@ -1,0 +1,31 @@
+{
+  "name": "fabric-browserify",
+  "version": "0.0.0",
+  "description": "umd bundled version of fabric.js",
+  "main": "/dist/fabric-browserify.js",
+  "scripts": {
+    "build": "browserify --standalone fabric-browserify ./node_modules/fabric/dist/fabric.js > dist/fabric-browserify.js",
+    "clean": "rimraf dist && mkdirp dist",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixlnow/fabric-browserify.git"
+  },
+  "keywords": [
+    "fabric",
+    "browserify"
+  ],
+  "author": "jurassix <clinton@pixlnow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pixlnow/fabric-browserify/issues"
+  },
+  "homepage": "https://github.com/pixlnow/fabric-browserify#readme",
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "fabric": "1.5.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.3"
+  }
+}
