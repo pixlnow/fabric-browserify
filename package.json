@@ -22,6 +22,12 @@
     "url": "https://github.com/pixlnow/fabric-browserify/issues"
   },
   "homepage": "https://github.com/pixlnow/fabric-browserify#readme",
+  "browser" : {
+    "canvas" : false,
+    "fs":      false,
+    "jsdom":   false,
+    "xmldom":  false
+  },
   "devDependencies": {
     "browserify": "^11.1.0",
     "fabric": "1.5.0",
